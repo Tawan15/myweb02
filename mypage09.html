@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" method="">
+    <label for="location">ชื่อ-นามสกุล:</label>
+    <input type="text" name="location" id="" placeholder="ชื่อ-นามสกุล" required />
+    <br><br>
+    <label for="number">อายุ:</label>
+    <input type="number" name="number" id="" placeholder="อายุ" required />
+    <br><br>
+    <label for="email">อีเมล:</label>
+    <input type="email" name="email" id="" placeholder="email@example.com" required />
+    <br><br>
+    <label for="password">รหัสผ่าน:</label>
+    <input type="password" name="password" id="" placeholder="ไม่ต่ำกว่า 6 ตัวอักษร" required />
+    <br><br>
+    <label for="message">ป้อนอะไรก็ได้ที่เนื้อหาเยอะๆ:</label>
+    <textarea name="message" id="" cols="30" rows="5" placeholder="ข้อความ" required></textarea>
+    <br><br>
+
+    <!-- เลือกได้หลายตัวเลือก: -->
+
+    <label for="gender">เพศ:</label>
+    <input type="radio" name="gender" id="">ชาย
+    <input type="radio" name="gender" id="">หญฺิง
+    <input type="radio" name="gender" id="">LGBTQ+
+    <input type="radio" name="gender" id="">ไม่ระบุ
+    <br><br>
+
+    <!-- เลือกได้ตัวเลือกเดียว -->
+    <label for="country">จังหวัด:</label>
+    <select name="country" id="" required>
+      <option value="">เลือกจังหวัด</option>
+      <option value="" selected>กรุงเทพมหานคร</option>
+      <option value="">เชียงใหม่</option>
+      <option value="">ภูเก็ต</option>
+      <option value="">นครปฐม</option>
+      <option value="">สมุทรปราการ</option>
+      <option value="">ปทุมธานี</option>
+    </select>
+    <br><br>
+    <label for="">Major:</label>
+    <select name="major" id="" size="2">
+      <option value="">วิศวกรรมคอมพิวเตอร์</option>
+      <option value="">วิศวกรรมไฟฟ้า</option>
+      <option value="">วิศวกรรมอุตสาหการ</option>
+      <option value="">วิศวกรรมโยธา</option>
+      <option value="">วิศวกรรมเครื่องกล</option>
+    </select>
+    <br><br>
+
+    <!-- เลือกได้มากกว่า 1 หรือไม่เลือกก็ได้ -->
+    <label for="">อาหารที่ชอบ:</label>
+    <br>
+    <input type="checkbox" name="food" id="">
+    <label for="food">Pizza</label>
+    <input type="checkbox" name="food" id="">
+    <label for="food">Burger</label>
+    <input type="checkbox" name="food" id="" checked>
+    <label for="food">Sushi</label>
+    <input type="checkbox" name="food" id="">
+    <label for="food">Salad</label>
+    <br><br>
+    <!-- การเลือกไฟล์(No filter)-->
+    <label for="file">เลือกไฟล์:</label>
+    <input type="file" name="file" id="">
+    <br><br>
+    <!-- การเลือกไฟล์แบบมี filter (เฉพาะไฟล์รูปภาพ) -->
+    <label for="file">เลือกไฟล์รูปภาพ:</label>
+    <input type="file" name="file" id="" accept="image/*">
+    <br><br>
+    <label for="file">เลือกไฟล์ word, excel, pdf:</label>
+    <input type="file" name="file" id="" accept=".pdf,.doc,.docx,.xls,.xlsx">
+    <br><br>
+    <label for ="date">เลือกเวลา:</label>
+    <input type="time" name="date" id="">
+    <br><br>
+    <label for ="date">เลือกวันที่:</label>
+    <input type="date" name="date" id="">
+    <br><br>
+    <label for ="date">เลือกวันที่และเวลา เข้างาน:</label>
+    <input type="datetime-local" name="date" id="">
+    <br><br>
+    <input type="submit" value="ตกลง/บันทึก/ลบ/แก้ไข/ใช่">
+    <br><br>
+    <input type="reset" value="ยกเลิก/ล้างข้อมูล">
+    <br><br>
+    <input type="button" value="ปุ่มกด/คลิก/เลือก/ยืนยัน">
+  </form>
+</body>
+
+</html>
